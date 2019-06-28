@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cuw-If-y3A">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kaiju Monsters View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="KaijuMonstersViewController" customModule="KaijuProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="godzillaHeader" translatesAutoresizingMaskIntoConstraints="NO" id="Cul-od-IPb">
+                                <rect key="frame" x="0.0" y="30" width="394" height="82"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Header Group" translatesAutoresizingMaskIntoConstraints="NO" id="Xdr-PJ-J7g">
+                                <rect key="frame" x="20" y="55" width="374" height="16"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NZ7-Xw-ejs">
+                                <rect key="frame" x="25" y="126" width="364" height="599"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.031372549020000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="w4h-vf-qwL">
+                                    <size key="itemSize" width="156" height="182"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kaijuProfile" id="rli-54-cUX" customClass="KaijuProfileCollectionViewCell" customModule="KaijuProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="156" height="182"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="156" height="182"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Godzilla Button" translatesAutoresizingMaskIntoConstraints="NO" id="MCN-hP-3Pv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="156" height="182"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nameANGUIRUS" translatesAutoresizingMaskIntoConstraints="NO" id="h7N-I7-kMq">
+                                                    <rect key="frame" x="16.5" y="164" width="123" height="16"/>
+                                                    <color key="backgroundColor" red="0.0029668125789999999" green="0.025578573350000001" blue="0.1041954532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="h7N-I7-kMq" firstAttribute="width" secondItem="MCN-hP-3Pv" secondAttribute="width" multiplier="0.79" id="BUB-iS-463"/>
+                                            <constraint firstItem="MCN-hP-3Pv" firstAttribute="leading" secondItem="rli-54-cUX" secondAttribute="leading" id="PDJ-Th-Pry"/>
+                                            <constraint firstAttribute="trailing" secondItem="MCN-hP-3Pv" secondAttribute="trailing" id="QIa-pl-R8L"/>
+                                            <constraint firstAttribute="bottom" secondItem="h7N-I7-kMq" secondAttribute="bottom" constant="2" id="XZT-K9-vdN"/>
+                                            <constraint firstItem="MCN-hP-3Pv" firstAttribute="top" secondItem="rli-54-cUX" secondAttribute="top" id="tla-Od-kZn"/>
+                                            <constraint firstAttribute="bottom" secondItem="MCN-hP-3Pv" secondAttribute="bottom" id="tpR-pH-2S1"/>
+                                            <constraint firstItem="h7N-I7-kMq" firstAttribute="centerX" secondItem="MCN-hP-3Pv" secondAttribute="centerX" id="ySK-pm-jxJ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="kaijuImage" destination="MCN-hP-3Pv" id="Hdo-Ho-w03"/>
+                                            <outlet property="kaijuName" destination="h7N-I7-kMq" id="FCO-Vh-nYq"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0029668125789612532" green="0.025578573346138" blue="0.10419545322656631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NZ7-Xw-ejs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0iA-68-cMq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xdr-PJ-J7g" secondAttribute="trailing" constant="20" id="0pn-1Q-olW"/>
+                            <constraint firstItem="Xdr-PJ-J7g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6m5-cB-MnA"/>
+                            <constraint firstAttribute="trailing" secondItem="Cul-od-IPb" secondAttribute="trailing" constant="20" id="coh-Ys-3wN"/>
+                            <constraint firstItem="NZ7-Xw-ejs" firstAttribute="top" secondItem="Xdr-PJ-J7g" secondAttribute="bottom" constant="55" id="dyR-By-OIJ"/>
+                            <constraint firstItem="Cul-od-IPb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="efu-mQ-F1L"/>
+                            <constraint firstItem="Cul-od-IPb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hjF-mw-qfg"/>
+                            <constraint firstItem="NZ7-Xw-ejs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="jyC-Ll-9qu"/>
+                            <constraint firstItem="NZ7-Xw-ejs" firstAttribute="top" secondItem="Cul-od-IPb" secondAttribute="bottom" constant="14" id="qbN-dU-0ka"/>
+                            <constraint firstItem="Xdr-PJ-J7g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="t8j-zm-Jla"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NZ7-Xw-ejs" secondAttribute="trailing" constant="25" id="zqk-oN-G9c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7HT-RA-fJb"/>
+                    <connections>
+                        <outlet property="kaijuCollectionView" destination="NZ7-Xw-ejs" id="AOm-Vs-xzJ"/>
+                        <segue destination="jlO-46-NdV" kind="show" identifier="goToProfile" id="JC9-cq-Oqz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.7391304347827" y="278.57142857142856"/>
+        </scene>
+        <!--Kaiju Profile Table View Controller-->
+        <scene sceneID="vR5-Zq-sv7">
+            <objects>
+                <tableViewController storyboardIdentifier="kaijuProfile" id="jlO-46-NdV" customClass="KaijuProfileTableViewController" customModule="KaijuProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eE8-fC-nb9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.010856498960000001" green="0.0337148346" blue="0.10003209859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="0.019607843140000001" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexColor" red="0.019607843140000001" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.010856498960000001" green="0.0337148346" blue="0.10003209859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="CHg-2I-pOm">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="469"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Godzilla Button" translatesAutoresizingMaskIntoConstraints="NO" id="FUz-Xh-QBW" userLabel="kaijuPhoto">
+                                    <rect key="frame" x="83" y="0.0" width="248" height="238.5"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nameANGUIRUS" translatesAutoresizingMaskIntoConstraints="NO" id="Uh5-LF-5sR" userLabel="kaijuNamePicture">
+                                    <rect key="frame" x="83" y="243.5" width="248" height="16"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0029668125789999999" green="0.025578573350000001" blue="0.1041954532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="Uh5-LF-5sR" firstAttribute="width" secondItem="FUz-Xh-QBW" secondAttribute="width" id="8bx-fU-AVF"/>
+                                <constraint firstItem="FUz-Xh-QBW" firstAttribute="centerX" secondItem="CHg-2I-pOm" secondAttribute="centerX" id="9FV-Ry-xc4"/>
+                                <constraint firstItem="FUz-Xh-QBW" firstAttribute="width" secondItem="CHg-2I-pOm" secondAttribute="width" multiplier="0.6" id="CTf-v0-D8d"/>
+                                <constraint firstItem="FUz-Xh-QBW" firstAttribute="centerY" secondItem="CHg-2I-pOm" secondAttribute="centerY" multiplier="0.8" id="F6H-Jc-Y0i"/>
+                                <constraint firstItem="Uh5-LF-5sR" firstAttribute="centerX" secondItem="FUz-Xh-QBW" secondAttribute="centerX" id="jxO-L8-xbT"/>
+                                <constraint firstItem="FUz-Xh-QBW" firstAttribute="height" secondItem="CHg-2I-pOm" secondAttribute="height" multiplier="0.8" id="oQV-Md-gWA"/>
+                                <constraint firstItem="Uh5-LF-5sR" firstAttribute="top" secondItem="FUz-Xh-QBW" secondAttribute="bottom" constant="5" id="wOg-f2-JVE"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="kaijuProfileCellName" rowHeight="97" id="nEq-nE-KTb" customClass="KaijuProfileTableViewCell" customModule="KaijuProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="497" width="414" height="97"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nEq-nE-KTb" id="BDe-cy-LWa">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="96.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monster Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ge9-zS-5BM">
+                                            <rect key="frame" x="40" y="11" width="334" height="75"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" red="0.019607843140000001" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ge9-zS-5BM" firstAttribute="leading" secondItem="BDe-cy-LWa" secondAttribute="leadingMargin" constant="20" id="bsl-BJ-9WF"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ge9-zS-5BM" secondAttribute="bottom" id="irD-GC-Kb9"/>
+                                        <constraint firstItem="ge9-zS-5BM" firstAttribute="top" secondItem="BDe-cy-LWa" secondAttribute="topMargin" id="wAC-kC-f6Z"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ge9-zS-5BM" secondAttribute="trailing" constant="20" id="wWV-jP-owz"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0029668125789999999" green="0.025578573350000001" blue="0.1041954532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="kaijuCellProfileInfo" destination="ge9-zS-5BM" id="Iuy-au-Gvc"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="kaijuProfileCellFirstAppears" rowHeight="97" id="kX6-o4-c6y" customClass="KaijuProfileTableViewCell" customModule="KaijuProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="594" width="414" height="97"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kX6-o4-c6y" id="TYc-7K-vKc">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="96.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monster Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oI-vW-Fln">
+                                            <rect key="frame" x="40" y="11" width="334" height="75"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" red="0.019607843140000001" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6oI-vW-Fln" firstAttribute="leading" secondItem="TYc-7K-vKc" secondAttribute="leadingMargin" constant="20" id="9Dk-O8-gBt"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="6oI-vW-Fln" secondAttribute="bottom" id="DZG-Pj-fEp"/>
+                                        <constraint firstItem="6oI-vW-Fln" firstAttribute="top" secondItem="TYc-7K-vKc" secondAttribute="topMargin" id="OaZ-we-zI3"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="6oI-vW-Fln" secondAttribute="trailing" constant="20" id="bdT-Pr-HID"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0029668125789999999" green="0.025578573350000001" blue="0.1041954532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="kaijuCellProfileInfo" destination="6oI-vW-Fln" id="5Cj-2h-BaH"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="kaijuProfileCellDescription" rowHeight="97" id="oKm-lw-Hry" customClass="KaijuProfileTableViewCell" customModule="KaijuProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="691" width="414" height="97"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oKm-lw-Hry" id="q1V-7S-WZc">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="96.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monster Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr4-M4-pzB">
+                                            <rect key="frame" x="40" y="11" width="334" height="75"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" red="0.019607843140000001" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="fr4-M4-pzB" secondAttribute="bottom" id="Bmi-Re-cDk"/>
+                                        <constraint firstItem="fr4-M4-pzB" firstAttribute="leading" secondItem="q1V-7S-WZc" secondAttribute="leadingMargin" constant="20" id="WYf-Vj-hgf"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="fr4-M4-pzB" secondAttribute="trailing" constant="20" id="XO8-Qw-ig6"/>
+                                        <constraint firstItem="fr4-M4-pzB" firstAttribute="top" secondItem="q1V-7S-WZc" secondAttribute="topMargin" id="o55-PB-A3J"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0029668125789999999" green="0.025578573350000001" blue="0.1041954532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="kaijuCellProfileInfo" destination="fr4-M4-pzB" id="7m6-fi-5TS"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="kaijuProfileCellAppearsIn" rowHeight="97" id="KcI-X6-Z5g" customClass="KaijuProfileTableViewCell" customModule="KaijuProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="788" width="414" height="97"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KcI-X6-Z5g" id="GbE-tC-ibv">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="96.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monster Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nws-w8-gNf">
+                                            <rect key="frame" x="28" y="8" width="358" height="80.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" red="0.019607843140000001" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Nws-w8-gNf" secondAttribute="trailing" constant="20" id="9RU-t3-qeq"/>
+                                        <constraint firstItem="Nws-w8-gNf" firstAttribute="top" secondItem="GbE-tC-ibv" secondAttribute="topMargin" id="Vqo-IZ-UoB"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Nws-w8-gNf" secondAttribute="bottom" id="WTg-qr-DD2"/>
+                                        <constraint firstItem="Nws-w8-gNf" firstAttribute="leading" secondItem="GbE-tC-ibv" secondAttribute="leadingMargin" constant="20" id="zr6-MD-87M"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0029668125789999999" green="0.025578573350000001" blue="0.1041954532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="kaijuCellProfileInfo" destination="Nws-w8-gNf" id="uZS-hs-TZ1"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jlO-46-NdV" id="0lD-0V-Cg6"/>
+                            <outlet property="delegate" destination="jlO-46-NdV" id="dLd-Ok-n6A"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="kaijuProfileImage" destination="FUz-Xh-QBW" id="d4T-Qx-pQf"/>
+                        <outlet property="kaijuProfileName" destination="Uh5-LF-5sR" id="DUl-Ka-KtN"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GfJ-Hf-Tau" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1995.6521739130437" y="282.58928571428572"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="P52-3C-lJJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dHJ-US-Giw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="search" id="6uj-cQ-LeZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="c65-DA-KPa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.019607843140000001" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.011764705882352941" green="0.031372549019607843" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.019607843140000001" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9vF-P4-Cbb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RFa-dL-FOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.7391304347827" y="-559.15178571428567"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Q1L-ij-cPX">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Cuw-If-y3A" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="qxh-nf-JFJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.010856498964130878" green="0.033714834600687027" blue="0.10003209859132767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.019607843140000001" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dHJ-US-Giw" kind="relationship" relationship="viewControllers" id="CVD-1p-QSj"/>
+                        <segue destination="qTd-gv-urM" kind="relationship" relationship="viewControllers" id="mg3-Kw-KVp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lkx-Z8-Cgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="-559.15178571428567"/>
+        </scene>
+        <!--Favorite Kaiju View Controller-->
+        <scene sceneID="3NP-a3-oee">
+            <objects>
+                <viewController id="qTd-gv-urM" customClass="FavoriteKaijuViewController" customModule="KaijuProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pdn-74-ESZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="godzillaHeader" translatesAutoresizingMaskIntoConstraints="NO" id="Bfj-hz-Ofc">
+                                <rect key="frame" x="0.0" y="74" width="394" height="16"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FAVORITES" translatesAutoresizingMaskIntoConstraints="NO" id="uwa-wL-wyu">
+                                <rect key="frame" x="103.5" y="10" width="207" height="84"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uzq-jE-6P7">
+                                <rect key="frame" x="25" y="104" width="364" height="709"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.031372549020000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CMk-hT-0AS">
+                                    <size key="itemSize" width="156" height="182"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kaijuProfile" id="hUM-vO-IJR" customClass="KaijuProfileCollectionViewCell" customModule="KaijuProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="156" height="182"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="156" height="182"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Godzilla Button" translatesAutoresizingMaskIntoConstraints="NO" id="O1B-SI-ceC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="156" height="182"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nameANGUIRUS" translatesAutoresizingMaskIntoConstraints="NO" id="Jrt-up-Ap3">
+                                                    <rect key="frame" x="10" y="125" width="136" height="57"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.019607843140000001" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Jrt-up-Ap3" firstAttribute="leading" secondItem="hUM-vO-IJR" secondAttribute="leading" constant="10" id="0BS-4H-MPI"/>
+                                            <constraint firstAttribute="bottom" secondItem="O1B-SI-ceC" secondAttribute="bottom" id="8Rl-Tg-vyX"/>
+                                            <constraint firstItem="O1B-SI-ceC" firstAttribute="top" secondItem="hUM-vO-IJR" secondAttribute="top" id="B0j-cy-SR9"/>
+                                            <constraint firstAttribute="trailing" secondItem="O1B-SI-ceC" secondAttribute="trailing" id="Qrt-Cp-ilD"/>
+                                            <constraint firstItem="Jrt-up-Ap3" firstAttribute="top" secondItem="hUM-vO-IJR" secondAttribute="top" constant="125" id="Rvi-aG-fqf"/>
+                                            <constraint firstItem="O1B-SI-ceC" firstAttribute="leading" secondItem="hUM-vO-IJR" secondAttribute="leading" id="o1a-DD-fuv"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jrt-up-Ap3" secondAttribute="trailing" constant="10" id="pqY-rI-NJJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Jrt-up-Ap3" secondAttribute="bottom" id="xu1-cg-fxd"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="kaijuImage" destination="O1B-SI-ceC" id="fMX-fB-HIg"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0029668125789999999" green="0.025578573350000001" blue="0.1041954532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uwa-wL-wyu" firstAttribute="width" secondItem="Pdn-74-ESZ" secondAttribute="width" multiplier="0.5" id="4G7-EZ-cW0"/>
+                            <constraint firstItem="Bfj-hz-Ofc" firstAttribute="top" secondItem="uCy-Kf-8Eq" secondAttribute="top" constant="30" id="82G-BV-9z8"/>
+                            <constraint firstItem="uzq-jE-6P7" firstAttribute="bottom" secondItem="uCy-Kf-8Eq" secondAttribute="bottom" id="A9H-bo-veY"/>
+                            <constraint firstItem="uwa-wL-wyu" firstAttribute="top" secondItem="Pdn-74-ESZ" secondAttribute="top" constant="10" id="Cgv-cT-B5v"/>
+                            <constraint firstItem="uzq-jE-6P7" firstAttribute="top" secondItem="Bfj-hz-Ofc" secondAttribute="bottom" constant="14" id="WaC-XV-aWy"/>
+                            <constraint firstAttribute="trailing" secondItem="Bfj-hz-Ofc" secondAttribute="trailing" constant="20" id="c0G-jI-Cjg"/>
+                            <constraint firstItem="uzq-jE-6P7" firstAttribute="top" secondItem="uwa-wL-wyu" secondAttribute="bottom" constant="10" id="gjS-OS-QfD"/>
+                            <constraint firstItem="uCy-Kf-8Eq" firstAttribute="trailing" secondItem="uzq-jE-6P7" secondAttribute="trailing" constant="25" id="hiV-Dd-zVO"/>
+                            <constraint firstItem="uwa-wL-wyu" firstAttribute="centerX" secondItem="uCy-Kf-8Eq" secondAttribute="centerX" id="i1b-rc-mlb"/>
+                            <constraint firstItem="uzq-jE-6P7" firstAttribute="leading" secondItem="uCy-Kf-8Eq" secondAttribute="leading" constant="25" id="k2h-iM-CYR"/>
+                            <constraint firstItem="Bfj-hz-Ofc" firstAttribute="leading" secondItem="Pdn-74-ESZ" secondAttribute="leading" id="k4z-Da-m9f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uCy-Kf-8Eq"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="9Ya-Qf-Zif"/>
+                    <navigationItem key="navigationItem" id="Cxb-lr-mrF"/>
+                    <connections>
+                        <outlet property="kaijuCollectionView" destination="uzq-jE-6P7" id="DbU-x5-OOK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pnb-xA-2S9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="278.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FAVORITES" width="200" height="26"/>
+        <image name="Godzilla Button" width="93" height="134"/>
+        <image name="Header Group" width="282" height="116"/>
+        <image name="godzillaHeader" width="450" height="237"/>
+        <image name="nameANGUIRUS" width="194" height="26"/>
+    </resources>
+</document>
